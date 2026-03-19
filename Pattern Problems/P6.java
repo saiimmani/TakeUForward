@@ -4,7 +4,7 @@ class Solution {
     public void pattern1(int n) {
         for (int i = n; i>=1; i--){
             for (int j = 1; j <= i; j++){
-                System.out.print(j);          // same patter just printing j in this case
+                System.out.print(j);          // same patter just printing j in this case as 👇
             }
             System.out.println();
         }
