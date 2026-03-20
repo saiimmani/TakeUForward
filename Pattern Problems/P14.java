@@ -10,7 +10,7 @@ class Solution {
  }
 }
 
-class Main {
+class P14 {
     public static void main(String[] args) {
         Solution sol = new Solution();
         sol.pattern(5);
