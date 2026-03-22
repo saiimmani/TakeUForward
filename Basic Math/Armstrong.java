@@ -35,7 +35,7 @@ class Solution {
         return sum == original;
     }
 }
-class Main {
+class Armstrong {
     public static void main(String[] args) {
          int num = 153;
         Solution obj = new Solution();
