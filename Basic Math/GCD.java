@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Main {
+public class GCD {
     public static int findGcd(int n1, int n2) {
         // Iterate from the minimum of
         // n1 and n2 down to 1
