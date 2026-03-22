@@ -1,4 +1,4 @@
-public class ArmstrongChecker {
+public class Armstrong {
 
     // Static method to check if a number is an Armstrong number
     public static boolean isArmstrong(int num) {
