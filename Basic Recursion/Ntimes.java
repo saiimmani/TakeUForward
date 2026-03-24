@@ -7,17 +7,17 @@ class Solution {
 
         // Print the name
         System.out.println(name);
-
+        count += 1;
         // Recursive call with incremented count
-        printName(name, count + 1, N);
+        printName(name,count,N);
     }
 }
 
-public class PrintNtimes {
+public class Ntimes {
     public static void main(String[] args) {
         Solution sol = new Solution();
         int N = 4;
-        String name = "IMMANI SAI";
+        String name = " IMMANI SAI";
 
         sol.printName(name, 0, N);
     }
