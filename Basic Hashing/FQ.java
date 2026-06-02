@@ -1,28 +1,19 @@
 import java.util.*;
 
 class Solution {
-    // Function to count frequency of each element in the array
-    public void countFreq(int[] arr, int n) {
-        // Create a visited array to mark elements that are already processed
-        boolean[] visited = new boolean[n];
+    // Function to count frequency of each element in the array using HashMap
+    public void Frequency(int[] arr, int n) {
+        // Create a HashMap to store frequency of each element
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-        // Traverse through all elements of the array
+        // Traverse the array and count frequencies
         for (int i = 0; i < n; i++) {
-            // Skip this element if it's already processed
-            if (visited[i])
-                continue;
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        }
 
-            // Count the frequency of arr[i]
-            int count = 1;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] == arr[j]) {
-                    visited[j] = true; // Mark arr[j] as processed
-                    count++;
-                }
-            }
-
-            // Output the element and its count
-            System.out.println(arr[i] + " " + count);
+        // Traverse through the HashMap and print frequencies
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " " + "is repeated " + entry.getValue() + " Times");
         }
     }
 
@@ -35,7 +26,6 @@ class Solution {
         Solution sol = new Solution();
 
         // Call the function to count frequencies
-        sol.countFreq(arr, n);
+        sol.Frequency(arr, n);
     }
 }
-
