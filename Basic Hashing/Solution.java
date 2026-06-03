@@ -13,7 +13,7 @@ class Solution {
 
         // Traverse through the HashMap and print frequencies
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + " " + "is repeated " + entry.getValue() + " Times");
+            System.out.println(entry.getKey() + " " + entry.getValue());
         }
     }
 
