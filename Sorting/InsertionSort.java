@@ -11,8 +11,8 @@ class InsertionSort {
             
             // Shift elements that are greater than key by one position
             while (j >= 0 && nums[j] > key) {
-                nums[j + 1] = nums[j];
-                j--;
+                nums[j + 1] = nums[j]; // copying the element
+                j--; 
             }
             
             nums[j + 1] = key; // Insert key at correct position
