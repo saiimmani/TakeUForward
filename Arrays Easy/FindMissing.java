@@ -1,4 +1,4 @@
-class Solution {
+class FindMissing {
     public int missingNumber(int[] nums) {
         int n = nums.length;
         long sum = 0;
